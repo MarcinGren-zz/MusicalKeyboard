@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MarcinGren/PatatapClone#readme",
   "dependencies": {
+    "http-server": "^0.11.1",
     "paper": "^0.11.5"
   }
 }
