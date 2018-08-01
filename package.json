@@ -1,0 +1,22 @@
+{
+  "name": "patatapclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "patatapclone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinGren/PatatapClone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinGren/PatatapClone/issues"
+  },
+  "homepage": "https://github.com/MarcinGren/PatatapClone#readme",
+  "dependencies": {
+    "paper": "^0.11.5"
+  }
+}
