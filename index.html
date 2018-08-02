@@ -3,14 +3,16 @@
 <html>
 
 <head>
-    <!-- Load the Paper.js library -->
     <script type="text/javascript" src="node_modules/paper/dist/paper-full.js"></script>
-    <!-- Define inlined PaperScript associate it with myCanvas -->
+    <link rel="stylesheet" href="patatapclone.css">
+    <!-- <script type="text/paperscript" canvas="myCanvas"> -->
+
+    </script>
 </head>
 
 <body>
     <canvas id="myCanvas" resize></canvas>
 </body>
-<script type="module" src="../patatapclone.js"></script>
+<script type="text/paperscript" src="../patatapclone.js" canvas="myCanvas"></script>
 
 </html>

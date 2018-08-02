@@ -1,11 +1,8 @@
-paper.install(window);
-window.onload = function() {
-	// Setup directly from canvas id:
-	paper.setup('myCanvas');
-	var path = new paper.Path();
-	path.strokeColor = 'black';
-	var start = new paper.Point(100, 100);
-	path.moveTo(start);
-	path.lineTo(start.add([ 200, -50 ]));
-	view.draw();
-}
+var path = new Path()
+path.strokeColor = 'white'
+var start = new Point(0, 100)
+path.moveTo(start)
+path.lineTo(start + [500, -50])
+
+var myCircle = new Path.Circle(new Point(100, 70), 50)
+myCircle.fillColor = 'pink'
