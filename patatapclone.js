@@ -1,4 +1,9 @@
 function onKeyDown(event) {
 	console.log(event.key)
-	var newCircle = new Path.Circle(new Point(100, 100), 10).fillColor = 'pink'
+
+	var maxPoint = new Point(view.size.width, view.size.height)
+	var randomPlace = Point.random()
+	var newPoint = maxPoint * randomPlace
+	var newCircle = new Path.Circle(newPoint, 10).fillColor = 'pink'
+	
 }
