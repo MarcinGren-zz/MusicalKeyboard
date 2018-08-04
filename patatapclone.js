@@ -1,8 +1,16 @@
 var listOfCircles = []
 
-var sound = new Howl({
-	src: ['sounds/bubbles.mp3', 'sounds/bubbles.ogg']
-})
+// var sound = new Howl({
+// 	src: ['sounds/bubbles.mp3', 'sounds/bubbles.ogg']
+// })
+
+var keyDict = {
+	a: {color: "purple", sound: getSound()}
+}
+
+function getSound(fileName) {
+	return new Howl({src: ['sounds/bubbles.mp3', 'sounds/bubbles.ogg']})
+}
 
 function onKeyDown(e) {
 	console.log(e.key)
@@ -13,9 +21,8 @@ function onKeyDown(e) {
 	var newCircle = new Path.Circle(newPoint, 100)
 	newCircle.fillColor = 'pink'
 	listOfCircles.push(newCircle)
-
-	sound.play()
-
+	keyDict.a.sound.play()
+	// sound.play()
 }
 
 function onFrame(e) {
