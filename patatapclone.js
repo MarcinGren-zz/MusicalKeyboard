@@ -1,5 +1,9 @@
 var listOfCircles = []
 
+var sound = new Howl({
+	src: ['sounds/bubbles.mp3', 'sounds/bubbles.ogg']
+})
+
 function onKeyDown(e) {
 	console.log(e.key)
 
@@ -9,6 +13,8 @@ function onKeyDown(e) {
 	var newCircle = new Path.Circle(newPoint, 100)
 	newCircle.fillColor = 'pink'
 	listOfCircles.push(newCircle)
+
+	sound.play()
 
 }
 
