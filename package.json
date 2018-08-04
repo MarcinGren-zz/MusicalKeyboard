@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MarcinGren/PatatapClone#readme",
   "dependencies": {
+    "howler": "^2.0.14",
     "http-server": "^0.11.1",
     "paper": "^0.11.5"
   }
