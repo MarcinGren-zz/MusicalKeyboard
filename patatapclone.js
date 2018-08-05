@@ -1,4 +1,5 @@
 var listOfCircles = []
+
 var keyDict = {
 	a: {color: "#ff00ff", sound: getSound('bubbles')},
 	b: {color: "#86b300", sound: getSound('clay')},
@@ -37,9 +38,6 @@ function getSound(fileName) {
 // }
 
 function onKeyDown(e) {
-	console.log(e.key)
-	console.log(keyDict[e.key])
-
 	var maxPoint = new Point(view.size.width, view.size.height)
 	var randomPlace = Point.random()
 	var newPoint = maxPoint * randomPlace
