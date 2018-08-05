@@ -1,6 +1,7 @@
 var listOfCircles = []
 var keyDict = {
-	a: {color: "purple", sound: getSound('bubbles')}
+	a: {color: "#ff00ff", sound: getSound('bubbles')},
+	b: {color: "#86b300", sound: getSound('clay')}
 }
 
 function getSound(fileName) {
@@ -19,7 +20,8 @@ function onKeyDown(e) {
 	var randomPlace = Point.random()
 	var newPoint = maxPoint * randomPlace
 	var newCircle = new Path.Circle(newPoint, 100)
-	newCircle.fillColor = 'pink'
+	
+	newCircle.fillColor = keyDict[e.key].color
 	listOfCircles.push(newCircle)
 	keyDict[e.key].sound.play()
 }
