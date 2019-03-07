@@ -32,10 +32,6 @@ var keyDict = {
 function getSound(fileName) {
 	return new Howl({ src: ["sounds/" + fileName + ".mp3", "sounds/" + fileName + ".ogg"] })
 }
-// paper.js cannot parse the below. Weird.
-// function getSound(fileName) {
-// 	return new Howl({src: [`sounds/${fileName}.mp3`, `sounds/${fileName}.ogg`]})
-// }
 
 function onKeyDown(e) {
 	var maxPoint = new Point(view.size.width, view.size.height)
